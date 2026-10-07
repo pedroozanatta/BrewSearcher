@@ -17,7 +17,7 @@ function SearchInput({ value, onChange, onSubmit }) {
           value={value}
           onChange={(event) => onChange(event.target.value)}
           placeholder="Busque um estilo de cerveja..."
-          className="w-full bg-transparent text-sm text-text outline-none placeholder:font-secondary"
+          className="w-full text-sm text-text outline-none placeholder:font-secondary"
         />
       </div>
 

@@ -3,7 +3,7 @@ import Logo from "../assets/Logo.png"
 function Header() {
   return (
     <header className="border-b border-border bg-background">   
-      <div className="flex w-full px-16 py-4">
+      <div className="flex w-full px-20 py-4">
         <a
           href="/"
           className="flex items-center gap-3"
@@ -11,10 +11,10 @@ function Header() {
           <img 
             src={Logo} 
             alt="Logo"
-            className = "h-16"
+            className = "h-12"
           />    
 
-          <span className="font-primary text-3xl text-text">
+          <span className="font-primary text-2xl text-text">
             Caçador de Cervejas
           </span>
         </a>

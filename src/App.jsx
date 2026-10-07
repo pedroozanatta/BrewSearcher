@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
-import SearchInput from './components/SearchInput'
+import Hero from './components/Hero'
 import { useBeerStyles } from './hooks/beerStyle'
 
 function App() {
@@ -21,14 +21,12 @@ function App() {
   return (
     <>
       <Header />
-
+      <Hero
+        search={search}
+        onSearchChange={setSearch}
+        onSearchSubmit={handleSearch}
+      />
       <main>
-        <SearchInput
-          value={search}
-          onChange={setSearch}
-          onSubmit={handleSearch}
-        />
-
         <h1>Caçador de Cervejas</h1>
 
         {loading && <p>Carregando estilos...</p>}
