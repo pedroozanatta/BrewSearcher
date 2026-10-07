@@ -14,17 +14,19 @@ function categoryMatches(category, keywords) {
 }
 
 export function matchesFamily(category, familyId) {
-  if (familyId === 'all') {
+  if (!familyId || familyId === 'all') {
     return true
   }
 
   if (familyId === 'other') {
-    return BEER_FAMILIES.every(
+    const familiesWithKeywords = BEER_FAMILIES.filter(
+      (family) => family.keywords.length > 0,
+    )
+    return familiesWithKeywords.every(
       (family) => !categoryMatches(category, family.keywords),
     )
   }
 
   const family = BEER_FAMILIES.find((item) => item.id === familyId)
-  
   return categoryMatches(category, family.keywords)
 }

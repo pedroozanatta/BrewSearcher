@@ -37,7 +37,7 @@ function App() {
 
     return styles.filter((style) => {
       const matchesTerm = style.name.toLowerCase().includes(term)
-      const matchesCategory = family === null || matchesFamily(style.category, family)
+      const matchesCategory = matchesFamily(style.category, family)
       return matchesTerm && matchesCategory
     })
   }, [styles, term, family, hasFilter])
