@@ -1,32 +1,30 @@
 import SearchInput from './SearchInput'
 import HeroImage from '../assets/HeroImage.png'
 
-function Hero({ search, onSearchChange, onSearchSubmit }) {
+function Hero({ search, onSearchChange }) {
   return (
-    <section className="mx-auto grid max-w-7xl grid-cols-2 items-center gap-20 px-16 py-20">
-      <div className="flex flex-col">
-        <span className="mb-4 font-secondary text-sm font-medium uppercase tracking-widest text-accent">
+    <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-12 md:px-16 md:py-20 lg:grid-cols-2 lg:gap-20">
+      <div>
+        <span className="text-sm font-medium uppercase tracking-widest text-accent">
           guia de cervejas
         </span>
 
-        <h1 className="font-primary text-5xl text-text">Descubra sua</h1>
-        <h1 className="font-primary text-5xl text-accent italic">próxima cerveja.</h1>
+        <h1 className="mt-4 font-title text-4xl md:text-5xl">
+          Descubra sua <br />
+          <span className="italic text-accent">próxima cerveja.</span>
+        </h1>
 
-        <p className="mt-6 font-secondary text-base text-text-secondary">
-          Explore estilos, compare características e encontre
-          uma cerveja que combina com você.
+        <p className="mt-6 text-text-secondary">
+          Explore estilos, compare características e encontre uma cerveja que
+          combina com você.
         </p>
 
         <div className="mt-8 max-w-xl">
-          <SearchInput
-            value={search}
-            onChange={onSearchChange}
-            onSubmit={onSearchSubmit}
-          />
+          <SearchInput value={search} onChange={onSearchChange} />
         </div>
       </div>
 
-      <div className="flex h-120 w-120 items-center justify-center rounded-full bg-primary">
+      <div className="hidden items-center justify-center rounded-full bg-primary lg:flex lg:size-120">
         <img
           src={HeroImage}
           alt="Caneca de cerveja ilustrada"
