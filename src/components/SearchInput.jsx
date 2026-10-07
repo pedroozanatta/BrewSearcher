@@ -1,6 +1,6 @@
 import SearchIcon from '../assets/SearchIcon.svg'
 
-function SearchInput({ value, onChange }) {
+export default function SearchInput({ value, onChange }) {
   return (
     <label className="flex items-center gap-2 rounded-xl border border-border px-4 py-3 shadow-sm">
       <img src={SearchIcon} alt="" />
@@ -15,5 +15,3 @@ function SearchInput({ value, onChange }) {
     </label>
   )
 }
-
-export default SearchInput

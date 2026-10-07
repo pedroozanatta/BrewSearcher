@@ -1,7 +1,7 @@
 import SearchInput from './SearchInput'
 import HeroImage from '../assets/HeroImage.png'
 
-function Hero({ search, onSearchChange }) {
+export default function Hero({ search, onSearchChange }) {
   return (
     <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-12 md:px-16 md:py-20 lg:grid-cols-2 lg:gap-20">
       <div>
@@ -34,5 +34,3 @@ function Hero({ search, onSearchChange }) {
     </section>
   )
 }
-
-export default Hero

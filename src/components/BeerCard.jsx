@@ -21,7 +21,7 @@ function Stat({ label, value, unit }) {
   )
 }
 
-function BeerCard({ style }) {
+export default function BeerCard({ style }) {
   return (
     <article className="overflow-hidden rounded-2xl border border-border bg-background shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
       <div
@@ -46,5 +46,3 @@ function BeerCard({ style }) {
     </article>
   )
 }
-
-export default BeerCard
