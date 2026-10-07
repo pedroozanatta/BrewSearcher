@@ -2,15 +2,12 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import { useBeerStyles } from './hooks/beerStyle'
+import BeerList from './components/BeerList'
 
 function App() {
   const [search, setSearch] = useState('')
 
-  const {
-    styles,
-    loading,
-    error,
-  } = useBeerStyles()
+  const { styles, loading, error } = useBeerStyles()
 
   function handleSearch(event) {
     event.preventDefault()
@@ -27,16 +24,12 @@ function App() {
         onSearchSubmit={handleSearch}
       />
       <main>
-        <h1>Caçador de Cervejas</h1>
-
         {loading && <p>Carregando estilos...</p>}
 
         {error && <p>{error}</p>}
 
         {!loading && !error && (
-          <p>
-            {styles.length} estilos encontrados.
-          </p>
+          <BeerList styles={styles} />
         )}
       </main>
     </>

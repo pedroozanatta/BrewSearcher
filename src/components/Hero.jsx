@@ -9,13 +9,8 @@ function Hero({ search, onSearchChange, onSearchSubmit }) {
           guia de cervejas
         </span>
 
-        <h1 className="font-primary text-6xl text-text">
-          Descubra sua
-          <br />
-          <span className="text-accent italic">
-            próxima cerveja.
-          </span>
-        </h1>
+        <h1 className="font-primary text-5xl text-text">Descubra sua</h1>
+        <h1 className="font-primary text-5xl text-accent italic">próxima cerveja.</h1>
 
         <p className="mt-6 font-secondary text-base text-text-secondary">
           Explore estilos, compare características e encontre
