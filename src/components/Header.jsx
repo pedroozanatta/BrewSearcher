@@ -1,8 +1,8 @@
-import Logo  from "../assets/Caçador de Cerveja.png"
+import Logo from "../assets/Logo.png"
 
 function Header() {
   return (
-    <header className="border-b border-[#E6DED1] bg-[#FFFDF8]">
+    <header className="border-b border-border bg-background">   
       <div className="flex w-full px-16 py-4">
         <a
           href="/"
@@ -11,10 +11,10 @@ function Header() {
           <img 
             src={Logo} 
             alt="Logo"
-            className = "w-20 h-20 object-cover"
+            className = "h-16"
           />    
 
-          <span className="font-primary text-3xl text-neutral-black">
+          <span className="font-primary text-3xl text-text">
             Caçador de Cervejas
           </span>
         </a>

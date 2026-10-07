@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import "tailwindcss";
 
-@theme{
+@theme {
   --font-primary: "DM Serif Display", serif;
 
-  --color-neutral-black: #280B06;
+  --color-primary: #0F4035;
+  --color-background: #FFFDF8;
+  --color-border: #E6DED1;
+  --color-text: #280B06;
 }

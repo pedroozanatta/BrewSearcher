@@ -1,14 +1,28 @@
-import { useState } from 'react'
 import Header from './components/Header'
+import { useBeerStyles } from './hooks/beerStyle'
 
 function App() {
+  const {
+    styles,
+    loading,
+    error,
+  } = useBeerStyles()
+
   return (
     <>
-      <Header/>
-      <main className="flex min-h-screen items-center justify-center">
-        <h1 className="text-4xl font-bold text-white">
-          Teste tailwind
-        </h1>
+      <Header />
+      <main>
+        <h1>Caçador de Cervejas</h1>
+
+        {loading && <p>Carregando estilos...</p>}
+
+        {error && <p>{error}</p>}
+
+        {!loading && !error && (
+          <p>
+            {styles.length} estilos encontrados.
+          </p>
+        )}
       </main>
     </>
   )
