@@ -12,6 +12,14 @@
   --color-border: #E6DED1;
   --color-text: #280B06;
   --color-text-secondary: #7A746B;
+
+  --color-beer-foam: #F7F0C7;
+  --color-beer-straw: #FCE883;
+  --color-beer-gold: #F6C101;
+  --color-beer-amber: #D38C08;
+  --color-beer-copper: #9A4204;
+  --color-beer-brown: #5A2202;
+  --color-beer-black: #280B06;
 }
 
 @layer base {

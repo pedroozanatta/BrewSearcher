@@ -10,8 +10,8 @@ function Hero({ search, onSearchChange }) {
         </span>
 
         <h1 className="mt-4 font-title text-4xl md:text-5xl">
-          Descubra sua <br />
-          <span className="italic text-accent">próxima cerveja.</span>
+          Descubra sua
+          <span className="block italic text-accent">próxima cerveja.</span>
         </h1>
 
         <p className="mt-6 text-text-secondary">

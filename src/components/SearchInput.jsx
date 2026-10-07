@@ -5,7 +5,8 @@ function SearchInput({ value, onChange }) {
     <label className="flex items-center gap-2 rounded-xl border border-border px-4 py-3 shadow-sm">
       <img src={SearchIcon} alt="" />
       <input
-        type="search"
+        type="text"
+        aria-label="Buscar estilo de cerveja"
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder="Busque um estilo de cerveja..."
