@@ -1,16 +1,63 @@
-# React + Vite
+# Caçador de Cervejas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto da disciplina **Programação Web Fullstack**, uma SPA em React que consome uma API JSON pública de estilos de cerveja e permite buscar e filtrar por família.
 
-Currently, two official plugins are available:
+## Integrantes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Pedro Henrique Zanatta de Oliveira | RA: 2601443
 
-## React Compiler
+## Link do Vídeo Explicativo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## API JSON utilizada
 
-## Expanding the ESLint configuration
+- **BrewGravity** — https://brewgravity.com/data/styles.json
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Retorna uma lista com 110 estilos de cerveja contendo nome, categoria, teor alcoólico (ABV), amargor (IBU) e cor (SRM).
+
+## Hook do React.js implementado
+
+- **`useMemo`** — usado em `src/App.jsx` para recalcular a lista filtrada apenas quando a busca ou o filtro de categoria mudam, evitando filtrar a lista inteira a cada renderização.
+
+## Biblioteca externa
+
+- **Tailwind CSS** (`tailwindcss`) — biblioteca de estilos utilitários usada em toda a interface.
+
+## Funcionalidades
+
+- Busca por nome do estilo.
+- Filtro por família (Todos, Lager, IPA, Trigo, Ácidas, Escuras, Outros).
+- Lista de estilos com faixas de ABV, IBU e SRM.
+
+## Estrutura
+
+```
+src/
+  App.jsx              Estado da aplicação e composição da tela
+  main.jsx             Entrada do React
+  index.css            Tema e configuração do Tailwind
+  components/          Header, Hero, SearchInput, CategoryFilter, BeerList, BeerCard
+  services/beerApi.js  Chamada à API via fetch
+  utils/
+    beerFamilies.js    Famílias de cerveja e função de filtro
+    typeColor.js       Faixas de SRM mapeadas para cores do tema
+```
+
+## Como executar
+
+```bash
+npm install
+npm run dev
+```
+
+Scripts disponíveis:
+
+- `npm run dev` — ambiente de desenvolvimento com Vite.
+- `npm run build` — build de produção na pasta `dist/`.
+- `npm run preview` — serve o build de produção localmente.
+- `npm run lint` — roda o ESLint.
+
+## Ferramentas de apoio
+
+- **Vite** — bundler e servidor de desenvolvimento.
+- **ESLint** — análise estática do código.
+- **Chat GPT** — auxílio na estilização, prototipação, busca de APIs e documentação do código.
