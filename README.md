@@ -22,7 +22,7 @@ Retorna uma lista com 110 estilos de cerveja contendo nome, categoria, teor alco
 
 ## Biblioteca externa
 
-- **Tailwind CSS** (`tailwindcss`) — biblioteca de estilos utilitários usada em toda a interface.
+- **Tailwind CSS** — biblioteca de estilos utilitários usada em toda a interface.
 
 ## Funcionalidades
 
@@ -34,14 +34,21 @@ Retorna uma lista com 110 estilos de cerveja contendo nome, categoria, teor alco
 
 ```
 src/
-  App.jsx              Estado da aplicação e composição da tela
-  main.jsx             Entrada do React
-  index.css            Tema e configuração do Tailwind
-  components/          Header, Hero, SearchInput, CategoryFilter, BeerList, BeerCard
-  services/beerApi.js  Chamada à API via fetch
+  App.jsx              
+  main.jsx             
+  index.css            
+  components/
+    Header.jsx
+    Hero.jsx
+    SearchInput.jsx
+    CategoryFilter.jsx
+    BeerList.jsx
+    BeerCard.jsx          
+  services/
+    beerApi.js 
   utils/
-    beerFamilies.js    Famílias de cerveja e função de filtro
-    typeColor.js       Faixas de SRM mapeadas para cores do tema
+    beerFamilies.js   
+    typeColor.js      
 ```
 
 ## Como executar
@@ -50,13 +57,6 @@ src/
 npm install
 npm run dev
 ```
-
-Scripts disponíveis:
-
-- `npm run dev` — ambiente de desenvolvimento com Vite.
-- `npm run build` — build de produção na pasta `dist/`.
-- `npm run preview` — serve o build de produção localmente.
-- `npm run lint` — roda o ESLint.
 
 ## Ferramentas de apoio
 
