@@ -7,10 +7,12 @@ Projeto da disciplina **Programação Web Fullstack**, uma SPA em React que cons
 - Pedro Henrique Zanatta de Oliveira | RA: 2601443
 
 ## Link do Vídeo Explicativo
+- **Vídeo** — https://drive.google.com/file/d/1bkGYNbvrOJ4CwSxjAJI_dGpIfslUbuM6/view?usp=sharing
 
 ## API JSON utilizada
 
-- **BrewGravity** — https://brewgravity.com/data/styles.json
+- **BrewGravity** — https://brewgravity.com/docs/api-reference/introduction
+- **Dados da API** — https://brewgravity.com/data/styles.json
 
 Retorna uma lista com 110 estilos de cerveja contendo nome, categoria, teor alcoólico (ABV), amargor (IBU) e cor (SRM).
 
